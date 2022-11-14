@@ -1,5 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root {
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #f7f7f7;
+    --white-text-color: #ffffff;
+    --primary-text-color: #555555;
+    --title-text-color: #303030;
+    --secondary-text-color: #9da4bd;
+    --accent-color: #ff6c00;
+}
 
 body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ------Section---------- */
+.section .pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: var(--title-text-color);
+}
+
+.section .title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: var(--title-text-color);
+}
+
+/* ------Button---------- */
+
+.button {
+    color: var(--white-text-color);
+    background: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+}
+
+.button.about {
+    color: var(--title-text-color);
+}
+
+/* ------------Header-------------- */
+.header {
+    background-color: rgb(32, 31, 31);
+    padding: 15px;
+}
+
+.site-nav {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.site-nav .link {
+    color: var(--white-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+}
+
+/* ------Hero------------ */
+
+.hero {
+    background-color: rgb(32, 31, 31);
+    padding: 20px;
+}
+
+.hero .pre-title,
+.prices .pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero .title {
+    line-height: 1.18;
+    color: var(--white-text-color);
+}
+
+.hero-link,
+.footer-link {
+    color: var(--title-text-color);
+}
+
+.hero-link:hover,
+.hero-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
+.hero .text,
+.prices-text,
+.contacts .text {
+    color: var(--secondary-text-color);
+}
+
+/* -------------About-------- */
+
+.about .text {
+    font-size: 14px;
+}
+
+/* ------------Prices-------------- */
+
+.prices {
+    background-color: rgb(32, 31, 31);
+}
+
+.prices .title {
+    color: var(--white-text-color);
+}
+
+/* -----Features-------- */
+.features .numbers {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+    color: var(--title-text-color);
+}
+
+.features .plus {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--accent-color);
+}
+
+/* ---------Barbers_________ */
+
+.barbers-name {
+    font-size: 18px;
+    color: var(--title-text-color);
+}
+
+.barbers-info {
+    font-size: 14px;
+    line-height: 1.36;
+    color: var(--accent-color);
+}
+
+/* ---------Form-------- */
+
+.form {
+    background-color: gray;
+}
+
+.form .title,
+.contacts .title {
+    color: var(--white-text-color);
+}
+
+/* ----------------Contacts --------- */
+
+.contacts {
+    background-color: gray;
+}
+
+.contacts-list .link {
+    font-style: normal;
+    color: var(--secondary-text-color);
+}
+
+.contacts-list .email {
+    text-decoration-line: underline;
+}
+
+.section .pre-title {
+    color: var(--white-text-color);
+}
+
+.section .pre-title {
+    color: var(--white-text-color);
+}
+
+/* ---------Footer----- */
+
+.section .copy {
+    color: var(--secondary-text-color);
 }
