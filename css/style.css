@@ -541,7 +541,6 @@ img {
 /* -----Form-Contacts */
 
 .booking-wrap {
-    margin: 0 auto;
     background-color: #191c26;
 
     background-image: url(../img/contacts-bg-image.png);
@@ -559,7 +558,7 @@ img {
 .form {
     width: calc(50% + 15px);
 
-    padding-top: 130px;
+    padding-top: 120px;
 }
 
 .form .button {
@@ -569,6 +568,8 @@ img {
 
 .form .title,
 .contacts .title {
+    line-height: 1.16;
+
     color: var(--white-text-color);
 }
 
@@ -577,12 +578,13 @@ img {
 .contacts {
     width: calc(50% - 15px);
 
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 100px;
 }
 
 .contacts .title {
+    line-height: 1.16;
     margin-bottom: 40px;
 }
 
